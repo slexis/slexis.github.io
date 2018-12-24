@@ -22,7 +22,7 @@ $('.simple-filter li').on('click', function() {
 });
 
 $(".chart").easyPieChart({
-  barColor: "#fff",
+  barColor: "#ff5722",
   trackColor: '#1c1c1c',
   scaleColor: false,
   lineWidth: 3,
