@@ -3,7 +3,7 @@ $(window).on('load', function() {
 });
 
 $(window).scroll(function() {
-  ($(this).scrollTop() > 300) ? $('.back-to-top').removeClass('scale-out') : $('.back-to-top').addClass('scale-out');
+  $(this).scrollTop() > 300 ? $('.back-to-top').removeClass('scale-out') : $('.back-to-top').addClass('scale-out');
 });
 
 $('.back-to-top').on('click', function(event) {
@@ -14,12 +14,6 @@ $('.back-to-top').on('click', function(event) {
 });
 
 $('.tooltipped').tooltip();
-
-$('.filtr-container').filterizr();
-$('.simple-filter li').on('click', function() {
-  $('.simple-filter li').removeClass('active-cat');
-  $(this).addClass('active-cat');
-});
 
 $(".chart").easyPieChart({
   barColor: "#ff5722",
